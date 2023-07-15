@@ -1,0 +1,13 @@
+.card {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-img, .card-img-top {
+    width: 50px;
+}

@@ -1,0 +1,15 @@
+.slider-selection {
+    background-image: none;
+}
+
+.good div.slider-selection {
+    background-color: green !important;
+}
+
+.warn div.slider-selection {
+    background-color: orange !important;
+}
+
+.bad div.slider-selection {
+    background-color: red !important;
+}

@@ -1,0 +1,7 @@
+.draggable {
+    position: absolute;
+    background-color: pink;
+    height: 200px;
+    width: 100px;
+    cursor: pointer;
+}

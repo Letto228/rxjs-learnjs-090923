@@ -1,0 +1,12 @@
+div.container-with-animation {
+    border-bottom: 1px solid black;
+    height: 200px;
+}
+
+div.animated-shape {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
