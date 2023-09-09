@@ -1,13 +1,17 @@
 import 'bootstrap';
 import '../../assets/css/style.css';
+import { FormComponent } from './form/form.component';
 
-const form1 = document.querySelector('.first-form') as HTMLElement;
-const form2 = document.querySelector('.second-form') as HTMLElement;
+const formMain = document.querySelector('.first-form') as HTMLElement;
+const formSecond = document.querySelector('.second-form') as HTMLElement;
 
-form2.hidden = true;
+formSecond.hidden = true;
+
+new FormComponent(formMain)
 
 setTimeout(() => {
     // create second form
-    form2.hidden = false;
+    formSecond.hidden = false;
+    new FormComponent(formSecond);
 
 }, 10000)

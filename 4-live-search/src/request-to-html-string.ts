@@ -1,7 +1,11 @@
+import { chunk } from "lodash";
 import { Card } from "./card.interface";
 
 export function requestToHtmlString(cards: Card[]): string {
-    return '';
+    const htmlCards = cards.map(createCard);
+    const groupedCards = chunk(htmlCards, 3).map(createRow);
+
+    return groupedCards.join('');
 }
 
 function createCard({name, description, owner}: Card): string {
